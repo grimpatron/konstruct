@@ -8,22 +8,21 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@700;400&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
   
 
-  <header class="header">
+  <header class="intro" id="home">
 
-    <div class="intro">
+    <div class="intro__screen">
       <a class="intro__logo-link">
         <img class="intro__logo" src="img/logo.svg" alt="Company logo">
       </a>
 
       <div class="intro__wrap">
         <h1 class="intro__title">Partner with konstuct</h1>
-        <div class="container">
-          <img class="intro__title-img" src="img/partner with konstuc.svg" alt="Partner with konstuct">
-        </div>
+        <div class="intro__title-wrap"><img class="intro__title-img" src="img/partner with konstuc.svg" alt="Partner with konstuct"></div>
         <div class="intro__subtitle">An award-winning construction management firm</div>        
       </div>
 
@@ -33,75 +32,77 @@
     <div class="topbar" id="scroll-down">
       <div class="container">
 
-        <a class="topbar__logo-link">
-          <img class="topbar__logo" src="img/logo-black.svg" alt="Company logo">
-        </a>
-      
-        <nav class="topbar__nav">
-          <ul class="topbar__list">
-            <li class="topbar__item">
-              <a href="#" class="topbar__link">Home</a>
-            </li>
-            <li class="topbar__item">
-              <a href="#" class="topbar__link">About</a>
-            </li>
-            <li class="topbar__item">
-              <a href="#" class="topbar__link">Services</a>
-            </li>
-            <li class="topbar__item">
-              <a href="#" class="topbar__link">Work</a>
-            </li>
-            <li class="topbar__item">
-              <a href="#" class="topbar__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="topbar__wrapper">
+          <a class="topbar__logo-link">
+            <img class="topbar__logo" src="img/logo-black.svg" alt="Company logo">
+          </a>
+        
+          <nav class="topbar__nav">
+            <ul class="topbar__list">
+              <li class="topbar__item">
+                <a href="#home" class="topbar__link">Home</a>
+              </li>
+              <li class="topbar__item">
+                <a href="#about" class="topbar__link">About</a>
+              </li>
+              <li class="topbar__item">
+                <a href="#services" class="topbar__link">Services</a>
+              </li>
+              <li class="topbar__item">
+                <a href="#work" class="topbar__link">Work</a>
+              </li>
+              <li class="topbar__item">
+                <a href="#contact" class="topbar__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="topbar__nav-burger">&#9776; &#10006;</button>
+        </div>
 
-        <div class="clear"></div>
       </div>
     </div>
 
   </header>
 
 
-  <section class="story">
+  <section class="story" id="about">
     <div class="container">
-      <h2 class="story__title section-title">Our story</h2>
+      <h2 class="story__title">Our story</h2>
 
-      <div class="story__content">
-        <div class="story__theme">Founded in 2011 by John Mathew Smith, <span>Konstruct</span> has become the number one construction management firm</div>
-        <p class="story__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>          
+      <div class="story__wrapper">
+        <div class="story__content">
+          <div class="story__theme">Founded in 2011 by John Mathew Smith, <span>Konstruct</span> has become the number one construction management firm</div>
+          <p class="story__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>          
+        </div>
+
+        <div class="story__gallery">
+          <div class="story__gallery-item story__gallery-item--plan">
+            <div class="story__gallery-text">We <br>plan</div>
+          </div>
+          <div class="story__gallery-item story__gallery-item--manage">
+            <div class="story__gallery-text">We <br>manage</div>
+          </div>
+          <div class="story__gallery-item story__gallery-item--build">
+            <div class="story__gallery-text">We <br>build</div>
+          </div>
+        </div>
       </div>
 
-      <div class="story__gallery">
-        <div class="story__gallery-item story__gallery-item--plan">
-          <div class="story__gallery-text">We <br>plan</div>
-        </div>
-        <div class="story__gallery-item story__gallery-item--manage">
-          <div class="story__gallery-text">We <br>manage</div>
-        </div>
-        <div class="story__gallery-item story__gallery-item--build">
-          <div class="story__gallery-text">We <br>build</div>
-        </div>
-      </div>
-
-      <div class="clear"></div>
     </div>
   </section>
 
 
-  <section class="capabilities">
+  <section class="capabilities" id="services">
     <div class="container">
 
-      <h2 class="capabilities__title section-title">Our capabilities</h2>
-      <div class="capabilities__slogan">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
-      <a href="#" class="capabilities__btn btn">All services</a>        
-      
-      <div class="clear"></div>
+      <div class="capabilities__wrapper">
+        <h2 class="capabilities__title">Our&nbsp;capabilities</h2>
+        <div class="capabilities__slogan">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
+        <a href="#" class="capabilities__btn">All services</a>        
+      </div>
 
       <div class="capabilities__slider">
-
-        <div class="capabilities__card">         
+        <div class="capabilities__card">
           <img src="img/capabilities-1.svg" alt="capabilities image" class="capabilities__card-icon">
           <h4 class="capabilities__card-title">Project and construction management</h4>
           <p class="capabilities__card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
@@ -117,17 +118,15 @@
           <img src="img/capabilities-3.svg" alt="capabilities image" class="capabilities__card-icon">
           <h4 class="capabilities__card-title">Factory construction and modeling</h4>
           <p class="capabilities__card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
-        </div>
+        </div>        
       </div>
 
     </div>
 
-    <div class="offer">
-      <div class="container">
-        <h4 class="offer__title">Want to build something amazing?</h4>          
+      <div class="offer">
+        <h4 class="offer__title">Want to build something amazing?</h4>
+        <a href="#" class="offer__link btn">Get in touch</a>
       </div>
-      <a href="#" class="offer__link btn">Get in touch</a>
-    </div>
 
     <div class="newsletter">
       <div class="container">
@@ -137,16 +136,15 @@
 
           <form action="#" class="newsletter__form">
             <input class="newsletter__input" type="email" name="email" id="" placeholder="test@youremail.com">
-            <button class="newsletter__btn btn" type="submit">Signup</button>
+            <button class="newsletter__btn" type="submit">Signup</button>
           </form>        
 
-          <div class="clear"></div>
         </div>
       </div>
     </div>
   </section>
 
-
+ 
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
@@ -214,7 +212,7 @@
           </div>
         </div>
 
-        <div class="contact">
+        <div class="contact" id="contact">
           <h3 class="contact__title">Contact us</h3>
 
           <div class="contact__wrapper">
@@ -232,17 +230,16 @@
           </div>
         </div>
 
-        <div class="clear"></div>
       </div>
 
     </div>
     <div class="copy">
       <div class="container">
-        <div class="copy__text">© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</div>
+        <div class="copy__signature">© 2023 Konstruct Inc. <a class="copy__signature-link" href="#">Created by <span>Khilman Mikhail</span></a></div>
       </div>
     </div>
   </footer>
 
-  
+
 </body>
 </html>
