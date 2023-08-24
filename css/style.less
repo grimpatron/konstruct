@@ -60,7 +60,6 @@ li {
 	line-height: 23px;
 	letter-spacing: 0.1875px;
 	color: @text-color;
-	font-weight: 400px;
 }
 .btn {
 	display: inline-block;
@@ -153,10 +152,10 @@ li {
 		font-size: 0;
 	}
 	&__logo { }
-	&__nav {
-	}
+	&__nav {	}
 	&__nav-burger {
 		display: none;
+		width: 50px;
 		padding: 2px 16px;
 		background-color: @main-color;
 		border-radius: 3px;
@@ -260,9 +259,11 @@ li {
 
 .capabilities {
 	padding-top: 18px;
+	margin-bottom: 60px;
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-start;
 		margin-bottom: 76px;
 	}
 	&__title {
@@ -278,7 +279,7 @@ li {
 	&__slogan {
 		max-width: 405px;
 		font-weight: 400;
-		font-size: 11px;
+		font-size: 13px;
 		line-height: 19px;
 		letter-spacing: 0.2px;
 		color: @text-color;
@@ -310,6 +311,43 @@ li {
 		&-text {
 			.text();
 		}
+	}
+}
+
+
+.work {
+	&__title {
+		.section-title();
+		margin-bottom: 40px;
+		text-align: left;
+		&::after {
+			bottom: -10px;
+			left: 0;
+			transform: translateX(0);
+		}
+	}
+	&__subtitle {
+		margin-top: 0;
+	}
+	&-example {
+		display: flex;
+		gap: 40px;
+		margin-bottom: 30px;
+		&--reverse {
+			flex-direction: row-reverse;
+		}
+	}
+	&-image {
+		flex: 1 0 52%;
+		max-height: 200px;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&-text {
+		.text ();
 	}
 }
 
@@ -512,9 +550,6 @@ li {
 		}
 	}
 	.capabilities{
-		&__wrapper {
-			align-items: flex-start;
-		}
 		&__title {
 			margin-right: 40px;
 		}
@@ -581,6 +616,24 @@ li {
 			max-width: 540px;
 		}
 	}
+	.work {
+		&-example {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			margin-bottom: 30px;
+			&--reverse {
+				flex-direction: column;
+			}
+		}
+		&-image {
+			flex: 1 0 240px;
+			max-height: 200px;
+		}
+		&-text {
+			margin-bottom: 30px;
+		}
+	}
 	.offer {
 		padding-top: 140px;
 	}
@@ -613,8 +666,29 @@ li {
 	.section-title {
 		font-size: 17px;
 	}
-	.topbar__nav{
-		display: none; /**/
+	.topbar__wrapper {
+		position: relative;
+	}
+	.topbar__nav {
+		opacity: 1;
+		transition: .2s all;
+		z-index: 2;
+	}
+	.topbar__nav--hidden {
+		opacity: 0;
+		// display: none;
+	}
+	.topbar__list {
+		position: absolute;
+		top: 30px;
+		right: 0;
+		padding: 20px;
+		flex-direction: column;
+		gap: 16px;
+		max-width: 220px;
+		margin-left: auto;
+		background-color: #ddd;
+		text-align: center;
 	}
 	.topbar__nav-burger {
 		display: block;
